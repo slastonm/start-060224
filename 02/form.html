@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="username">
+            User name
+        </label>
+        <h3>
+            Login info
+        </h3>
+        <p>
+            Minimal lenght 10 symbol
+        </p>
+        <input disabled type="text" id="username">
+        <br>
+        <br>
+        <label for="userpassword">
+            User password
+        </label>
+        <input type="password" id="userpassword">
+        <br><br>
+        <textarea cols="30" rows="10"></textarea>
+        <select>
+            <!-- <h1></h1> -->
+            <option value="001f">Віділення поштомат №1 Хрещатик №1</option>
+            <option value="001f">Віділення поштомат №2 Хрещатик №2</option>
+            <option  disabled value="003f">Віділення поштомат №3 Хрещатик №3</option>
+            <option  disabled value="004f">Віділення поштомат №4 Хрещатик №4</option>
+            <option value="001f">Віділення поштомат №5 Хрещатик №5</option>
+        </select>
+        <br>
+        <div>
+            <label for="selfdelivery">Самовивіз</label>
+            <input type="radio" name="delivery-value" id="selfdelivery">
+            <label for="delivery">Курєром</label>
+            <input type="radio" name="delivery-value" id="delivery">
+            <label for="ukrpost">Укр пошта</label>
+            <input type="radio" name="delivery-value" id="ukrpost">
+        </div>
+        <br>
+        <div>
+            <label for="car">Машина</label>
+            <input type="checkbox" name="car" id="car">
+            <label for="bycicle">Велосипед</label>
+            <input type="checkbox" name="bycicle" id="bycicle">
+            <label for="bus">Автобус</label>
+            <input type="checkbox" name="bus" id="bus">
+        </div>
+    </form>
+</body>
+</html>
