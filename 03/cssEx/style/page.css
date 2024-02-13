@@ -1,0 +1,130 @@
+*{
+    /* text-transform: uppercase; */
+}
+
+
+/* .inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+} */
+body{
+    background-color: lightblue;
+    background-color: #fff;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+h3{
+    background-color: blue;
+    color: yellow;
+}
+h3{
+    background-color: yellow;
+    color: blue;
+}
+
+/* h1{
+    text-transform: uppercase;
+}
+h2{
+    text-transform: uppercase;
+}
+h3{
+    text-transform: uppercase;
+} */
+/* DRY don't repeat yourself */
+h1, h2, h3{
+    text-transform: uppercase;
+}
+p span{
+    color:white;
+}
+div span{
+    color: rgb(166, 83, 244);
+}
+span{
+    color: orange;
+}
+.nav-link{
+    background-color: white;
+    color: red;
+}
+
+a.nav-link{
+    background-color: blue;
+    color: yellow;
+}
+.big-font{
+    font-size: 24px;
+}
+.nav-link.big-font{
+    font-size: 23px;
+}
+#main-link{
+    background-color: black;
+    color: yellow;
+}
+ul li{
+    background-color: gray;
+    color: blue;
+}
+/* .first{
+    background-color: black;
+    color: white;
+} */
+ul li:first-child{
+    background-color: black;
+    color: white;
+}
+ul li:last-child{
+    background-color: black;
+    color: rgb(238, 10, 181);
+}
+ul li:nth-child(3){
+    background-color: black;
+    color: orange;
+}
+ul li:nth-child(4){
+    background-color: rgb(5, 106, 54);
+    color: orange;
+}
+
+p{
+    background-color: blueviolet;
+    color: white;
+}
+p:hover{
+    background-color: rgb(8, 137, 107);
+    color: rgb(19, 18, 18);
+}
+p:hover span{
+    background-color: black;
+    color: white;
+}
+
+a[href="https://getbootstrap.com/"]{
+    font-size: 34px;
+}
+header{
+     background-color: rgba(255, 140, 0, 0.5);/* 0-1 */
+}
+.tex-block{
+    background-color: lavender;
+    /* text-align: right; */
+    text-align: center;
+
+}
+p{
+    font-size: 26px;
+    width: 400px;
+    /* height: 100px; */
+    height: auto;
+
+}
