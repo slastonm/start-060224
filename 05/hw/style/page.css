@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+    margin: 0;
+}
+header{
+    padding: 65px 0 59px 0;
+}
+.header-content{
+    width: 936px;
+    margin: 0 auto;
+    font-size: 0;
+}
+.logo-block,
+.header-social{
+    display: inline-block;
+    font-size: 23px;
+    width: 468px;
+    vertical-align: top;
+}
+.header-social{
+    text-align: right;
+    padding-top: 7px;
+}
+.header-social a{
+    display: inline-block;
+    margin-right: 21px;
+    text-decoration: none;
+}
+.header-social a:last-child{
+    margin-right: 0;
+}
+.content-container{
+    width: 810px;
+    margin: 0 auto;
+    text-align: center;
+}
+.main{
+    padding: 102px 0 117px 0;
+    background-color: rgb(250, 201, 96);
+}
+.main h1{
+    color: rgb(138, 109, 47);
+    font-size: 44px;
+    line-height: 54px;
+    margin: 0 0 40px 0;
+}
+.main input,
+.main button{
+    height: 54px;
+    display: inline-block;
+    font-size: 30px;
+    line-height: 54px;
+    border: none;
+}
+.main input{
+    padding: 0 36px;
+    color: rgb(153, 153, 153);
+    border-radius: 2px 0px 0px 2px;
+    background: rgb(255, 255, 255);
+    width: 560px;
+}
+.main button{
+    border-radius: 0px 2px 2px 0px;
+    background: rgb(168, 134, 61);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0 34px 0 40px;
+}
+.main button:hover{
+    background-color: white;
+    color:rgb(168, 134, 61);
+}
+.space-info{
+    padding: 71px 0 81px 0;
+    background: rgb(242, 242, 242);
+}
+.content-container h3{
+    color: rgba(0, 0, 0, 0.56);
+    font-size: 37px;
+    line-height: 36px;
+    margin: 0 0 32px 0;
+}
+.content-container p{
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 23px;
+    line-height: 30px;
+    margin: 0;
+}
+.space-info p{
+    margin-bottom: 56px;
+}
+.mobile-info{
+    padding: 86px 0 21px 0;
+}
+.mobile-info p{
+    margin-bottom: 32px;
+}
+.friends-info{
+    padding: 54px 0 107px;
+    background: rgb(250, 201, 96);
+    border-bottom: 3px solid white;
+}
+.friends-info p{
+    margin-bottom: 33px;
+}
+.friends-info button{
+    padding: 0 24px;
+    display: inline-block;
+}
+footer{
+    text-align: center;
+    padding: 81px 0;
+}
+.footer-social{
+    padding-top: 24px;
+}
+.footer-social a{
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 22px;
+}
+.footer-social a:last-child{
+    margin-right: 0;
+}
