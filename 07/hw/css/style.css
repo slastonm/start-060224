@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+}
+/* .inter-100 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+} */
+body{
+    margin: 0;
+    background-image: url('../img/mainbg.png');
+    background-color: black;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+main{
+    width: 1614px;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    padding: 40px 0 118px 0;
+    justify-content: space-between;
+}
+.header-logo,
+.header-user{
+    display: flex;
+    align-items: center;
+}
+.header-user{
+    column-gap: 45px;
+}
+.header-user .fa-magnifying-glass{
+    color:rgb(255, 255, 255);
+    font-size: 35px;
+}
+.header-logo{
+    column-gap: 16px;
+}
+.date{
+    color: rgb(200, 200, 200);
+    font-size: 24px;
+    line-height: 28px;
+    display: inline-block;
+    padding-left: 29px;
+    position: relative;
+    /* border-left: 3px solid white; */
+}
+.date::before{
+    content: "";
+    display: block;
+    width: 3px;
+    height: 28px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+}
+.content{
+    width: 897px;
+}
+.types span{
+    display: inline-block;
+    padding: 0 23px;
+    position: relative;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 39px;
+    color: rgb(255, 255, 255);
+}
+.types span::before{
+    content: "";
+    display: block;
+    width: 3px;
+    height: 39px;
+    background-color: white;
+    position: absolute;
+    right:0;
+    color: rgb(255, 255, 255);
+
+}
+.types span:first-child{
+    padding-left: 0;
+}
+.types span:last-child::before{
+    display: none;
+}
+.main-title{
+    color: rgb(255, 255, 255);
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 77px;
+    letter-spacing: 5.5px;
+    text-align: left;
+    margin: 48px 0;
+}
+.info{
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.info-item{
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 1;
+    position: relative;
+    padding: 0 23px;
+}
+.info-item::after{
+    content: "";
+    display: block;
+    width: 3px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    right:0;
+    top: 7px;
+    color: rgb(255, 255, 255);
+}
+.info-item:first-child{
+    padding-left: 0;
+}
+.info-item:last-child::after{
+    display: none;
+}
+.secondary-info{
+    color: #A7A6A6;
+}
+.film-description{
+    color: rgb(167, 166, 166);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    margin-top: 17px;
+    margin-bottom: 35px;
+}
+.raiting{
+    font-size: 28px;
+    display: flex;
+    column-gap: 16px;
+}
+.raiting .fa-solid.fa-star{
+    color: rgb(255, 234, 43);
+}
+.raiting .fa-regular.fa-star{
+    color: rgb(255, 255, 255);
+}
+.action-btns{
+    padding: 54px 0;
+    display: flex;
+    column-gap: 50px;
+}
+.btn-play{
+    border-radius: 10px;
+    background: rgb(213, 13, 31);
+    padding: 16px 34px;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 141.52%;
+    border: 3px solid rgb(213, 13, 31);
+}
+.btn-play:hover{
+    border: 3px solid rgb(253, 252, 252);
+}
+.all-info{
+    padding: 16px 58px;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 141.52%;
+    background-color: transparent;
+    border: 3px solid rgb(253, 252, 252);
+    border-radius: 10px;
+}
+.all-info:hover{
+    border: 3px solid rgb(213, 13, 31);
+    color: rgb(213, 13, 31);
+    background-color: rgb(253, 252, 252);
+}
+.recomendation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 32px;
+}
+.recomendation h3{
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 144.52%;
+    letter-spacing: 6.5px;
+}
+.recomendation-buttons{
+    display: flex;
+    column-gap: 27px;
+    align-items: center;
+}
+.recomendation-buttons button{
+    width: 34px;
+    height: 34px;
+    border: 1.54px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: transparent;
+    color: white;
+    font-size: 17px;
+}
+.recomendation-buttons button:hover{
+    border: 1.54px solid rgb(167, 166, 166);
+    color: rgb(167, 166, 166);
+}
+.slider{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 49px;
+}
