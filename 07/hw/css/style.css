@@ -24,7 +24,9 @@ body{
       "slnt" 0;
 }
 main{
-    width: 1614px;
+    /* width: 1614px; */
+    /* max-width: 1614px; */
+    width: 80%;
     margin: 0 auto;
 }
 header{
@@ -66,7 +68,10 @@ header{
     left: 0;
 }
 .content{
-    width: 897px;
+    /* width: 897px; */
+    /* max-width: 897px; */
+    width: 55%;
+
 }
 .types span{
     display: inline-block;
@@ -225,4 +230,10 @@ header{
     display: flex;
     justify-content: space-between;
     padding-bottom: 49px;
+}
+.slider div{
+    width: 18%;
+}
+.slider div>img{
+    width: 100%;
 }

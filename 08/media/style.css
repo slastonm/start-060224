@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+}
+.logo{
+    padding: 40px;
+    background-color: yellow;
+    width: 100%;
+}
+.user{
+    padding: 20px;
+    background-color: blue;
+    width: 100%;
+}
+/* @media (max-width:1200px){
+    body{
+        background-color: black;
+    }
+}
+@media screen and (max-width:800px) {
+    .wrapper{
+        flex-wrap: wrap-reverse;
+        background-color: lightblue;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:400px) {
+    .wrapper{
+        width: 95%;
+    }
+    .logo{
+        width: 100%;
+    }
+    .user{
+        width: 100%;
+    }
+} */
+
+/* @media(min-width:700px){
+    body{
+        background-color: black;
+    }
+    .logo{
+        width: 250px;
+    }
+    .user{
+        width: 250px;
+    }
+    .wrapper{
+        width: 80%;
+        align-items: center;
+        flex-direction: row;
+    }
+}
+@media(min-width:1200px){
+    body{
+        background-color: rgb(84, 83, 83);
+    }
+} */
+
+
+@media screen and (min-width:810px) and (max-width:1080px){
+    .logo{
+        padding: 140px;
+        background-color: rgb(230, 7, 166);
+
+    }
+    .user{
+        padding: 140px;
+        background-color: rgb(113, 113, 232);
+    }
+
+}
+
+@media (375px <= width <= 790px){
+    .logo{
+        padding: 10px;
+        background-color: rgb(6, 135, 62);
+
+    }
+    .user{
+        padding: 10px;
+        background-color: rgb(177, 116, 11);
+    }
+
+}
+
+@media print{
+    .wrapper{
+        border: none;
+    }
+    .logo,.user{
+        font-size: 30px;
+    }
+}
+
+@media (min-aspect-ratio:19.5/9){
+
+}
+@media (max-aspect-ratio:19.5/9){
+    
+}

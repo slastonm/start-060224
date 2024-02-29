@@ -1,0 +1,41 @@
+@media (max-width:1080px){
+    header {
+        padding: 40px 0 58px 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+    .content {
+        width: 100%;
+    }
+    .types span {
+        padding: 0 10px;
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .types span::before {
+        height: 21px;
+    }
+    .main-title {
+        font-size: 34px;
+        line-height: 37px;
+        letter-spacing: 2.5px;
+        margin: 28px 0;
+      }
+      .info{
+        flex-direction: column;
+        row-gap: 19px;        
+      }
+      .info-item{
+        padding: 0;
+      }
+
+      .info-item::after {
+        display: none;
+      }
+      .action-btns {
+        padding: 34px 0;
+        flex-direction: column;
+        row-gap: 20px;
+      }
+}

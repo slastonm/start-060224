@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --MainColor:black;
+    --main-font-color:yellow;
+    --font-family:Arial, Helvetica, sans-serif;
+    --secondary-font-family:'Times New Roman', Times, serif;
+    --main-font-size:35px;
+    --secondary-font-size:25px;
+}
+html,
+body{
+    margin: 0;
+    
+}
+section{
+    /* height: 800px; */
+    /* min-height: 100%; */
+    /* min-height: 100vh; */
+    /* width: 50vw; */
+    /* width: 50%; */
+    /* padding: 6em 3em; */
+    padding: 6rem 4rem;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    font-size: 3vw;
+}
+h1{
+    /* font-size: 4vw; */
+}
+p{
+    width: 200px;
+
+}
+section:nth-child(2){
+    background-color: green;
+}
+img{
+    /* width: 100%; */
+}
+
+@media (max-width:1200px){
+    html,body{
+        font-size: 10px;
+    }
+}
+.special{
+    background-color: var(--MainColor);
+    text-align: center;
+}
+.special h3{
+    color: var(--main-font-color);
+    font-family: var(--font-family);
+    font-size: var(--main-font-size);
+}
+.special p{
+    --secondary-font-size:40px;
+    color: var(--main-font-color);
+    font-family: var(--secondary-font-family);
+    font-size: var(--secondary-font-size);
+}
+
+@media (max-width:1000px){
+    :root{
+        --MainColor:rgb(231, 6, 6);
+        --main-font-color:rgb(16, 16, 15);
+        --main-font-size:25px;
+        --secondary-font-size:15px;
+    }
+    .special p{
+        --secondary-font-size:15px;
+    }
+}
