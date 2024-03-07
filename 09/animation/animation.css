@@ -1,0 +1,78 @@
+@keyframes first {
+    from{
+        top: 0;
+        width: 150px;
+        height: 150px;
+        background-color: red;
+        color: white;
+        border-radius: 0;
+    }
+    to{
+        top: 200px;
+        width: 150px;
+        height: 150px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(108, 221, 17);
+        border-radius: 100%;
+    }
+}
+@keyframes pro {
+    0%{
+        top: 0;
+        width: 150px;
+        height: 150px;
+        background-color: red;
+        color: white;
+        border-radius: 0;
+    }
+    25%{
+        left: 100px;
+        width: 150px;
+        height: 150px;
+        background-color: rgb(213, 121, 1);
+        color: white;
+        border-radius: 20px;
+    }
+    40%{
+        top: 100px;
+        width: 150px;
+        height: 150px;
+        background-color: rgb(97, 177, 5);
+        color: rgb(17, 10, 10);
+        border-radius: 60px;
+    }
+    70%{
+        top: 50px;
+        left: 50px;
+        width: 150px;
+        height: 150px;
+        background-color: rgb(5, 128, 177);
+        color: rgb(246, 242, 242);
+        border-radius: 20px;
+    }
+    100%{
+        top: 0;
+        left: 0;
+        width: 150px;
+        height: 150px;
+        background-color: red;
+        color: white;
+        border-radius: 0;
+    }
+}
+
+.simple{
+    position: relative;
+    top: 200px;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    color: white;
+    border-radius: 0;
+    animation-duration: 20s;
+    /* animation-name: first; */
+    animation-name: pro;
+    animation-iteration-count: 3;
+    animation-delay: 10s;
+}

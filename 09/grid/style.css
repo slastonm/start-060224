@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.i-grid{
+    display: inline-grid;
+    border: 1px solid black;
+}
+.grid{
+    display: grid;
+    /* width: 1000px; */
+    width: 80%;
+    border: 1px solid black;
+    margin: 50px auto;
+    height: 600px;
+    /* grid-template-columns: 350px 350px 300px; */
+    /* grid-template-columns: 35vw 35vw 30vw; */
+    /* grid-template-columns: 200px 100%; */
+    /* grid-template-columns: 200px auto auto auto; */
+    /* grid-template-columns: auto auto auto; */
+    /* grid-template-columns: 1fr 2fr 3fr 250px; */
+    /* grid-template-columns: 250px repeat(3, 1fr 150px); */
+    /* grid-template-columns: minmax(400px, 1fr) 1fr; */
+    /* grid-template-columns: repeat(3, minmax(200px, 1fr)); */
+    grid-template-columns: 20% 20% 20%;
+    /* grid-template-rows: 1fr 1fr 2fr; */
+    /* justify-content: end; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* align-items: end; */
+    /* justify-items: center; */
+    /* align-content: start; */
+    column-gap: 10px;
+    row-gap: 15px;
+
+}
+.item{
+    padding: 20px;
+    background-color: gray;
+}
+.item:nth-child(1){
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+}
+.item:nth-child(2){
+    background-color: blue;
+    /* grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 6; */
+    /* min-width: 300px; */
+    align-self: center;
+}
+.item:nth-child(3){
+    background-color: rgb(4, 235, 85);
+}.item:nth-child(4){
+    background-color: rgb(240, 134, 13);
+    /* grid-column-start:2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3; */
+}.item:nth-child(5){
+    background-color: rgb(18, 187, 182);
+    /* grid-column-start:-1;
+    grid-column-end: -2;
+    grid-row-start: -1;
+    grid-row-end: -2; */
+}.item:nth-child(6){
+    background-color: rgb(3, 3, 135);
+}.item:nth-child(7){
+    background-color: rgb(160, 160, 236);
+}.item:nth-child(8){
+    background-color: rgb(4, 134, 28);
+}
+
+section{
+    display: grid;
+    grid-template-columns: 300px auto auto;
+    grid-template-areas: 
+    "top top top"
+    "aside . main-block"
+    "aside bottom bottom";
+}
+header,
+aside,
+main,
+footer{
+    padding: 50px;
+    color: white;
+    text-align: center;
+}
+header{
+    background-color: orange;
+    grid-area: top;
+}
+aside{
+    background-color: black;
+    grid-area: aside;
+}
+main{
+    background-color: gray;
+    grid-area: main-block;
+}
+footer{
+    background-color: slateblue;
+    grid-area: bottom;
+}
+
+@media(max-width:800px){
+    section{
+        grid-template-areas: 
+        "main-block main-block"
+        "aside bottom"
+        "top top";
+    }
+}
