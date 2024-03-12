@@ -1,0 +1,13 @@
+/* .first{
+    display: flex!important;
+}
+.first{
+    display: block;
+} */
+
+.container, .row, .col-1{
+
+}
+.container-sm.custom{
+    max-width: 300px;
+}

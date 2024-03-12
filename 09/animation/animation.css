@@ -73,6 +73,53 @@
     animation-duration: 20s;
     /* animation-name: first; */
     animation-name: pro;
-    animation-iteration-count: 3;
-    animation-delay: 10s;
+    /* animation-iteration-count: 3; */
+    animation-iteration-count: infinite;
+    /* animation-delay: 10s; */
+}
+.second{
+    animation-delay: 5s;
+    animation-direction: reverse;
+}
+@keyframes move {
+    from{
+        left: 0;
+    }
+    to{
+        left: 1800px;
+    }
+}
+.type>div{
+    width: 95px;
+    height: 95px;
+    position: relative;
+    background-color: orange;
+    text-align: center;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-name: move;
+}
+.linear{
+    animation-timing-function: linear;
+}
+.ease{
+    animation-timing-function: ease;
+}
+.ease-in{
+    animation-timing-function: ease;
+}
+.ease-in{
+    animation-timing-function: ease-in;
+}
+.ease-in-out{
+    animation-timing-function: ease-in-out;
+}
+.ease-out{
+    animation-timing-function: ease-out;
+}
+.one{
+    animation-timing-function:cubic-bezier(.35,1.37,.85,-0.35);
+}
+.next{
+        animation-timing-function:cubic-bezier(.85,.15,1,-0.3);
 }

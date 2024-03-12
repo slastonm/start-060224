@@ -1,0 +1,81 @@
+.transform{
+    display: inline-block;
+    margin: 100px 40px;
+    padding: 20px 40px;
+    text-align: center;
+    background-color: red;
+    border: 4px solid black;
+    font-size: 20px;
+    transition: all 2s ease-in;    
+}
+.transform:hover{
+    background-color: black;
+    border-color: red;
+    color: red;
+}
+.scale:hover{
+    /* transform: ; */
+    /* scale: 2 0.5; */
+    /* scale: 0.7; */
+    transform: scale(1.2, 0.9);
+    /* padding: 40px 80px;
+    font-size: 40px; */
+}
+.rotate:hover{
+    /* rotate: -245deg; */
+    transform: rotate(180deg);
+}
+.skew:hover{
+    /* rotate: -245deg; */
+    transform: skew(-10deg, 75deg);
+}
+.translate:hover{
+    /* rotate: -245deg; */
+    transform: translate(-50px, 50px);
+}
+.all:hover{
+    /* rotate: -245deg; */
+    transform: translate(-50px, 50px) rotate(45deg) scale(1.3);
+}
+.drink{
+    width: 350px;
+    margin: 0 auto;
+    border: 6px solid gray;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: all 2s linear;   
+}
+.text-block{
+    position: absolute;
+    bottom: -150px;
+    padding: 30px 0;
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.61);
+    color: white;
+    transition: all 1s linear;  
+}
+.drink img{
+    width: 100%;
+    transition: all 2s linear;  
+}
+.drink:hover .text-block{
+    bottom: 0;
+}
+.drink:hover img{
+    transform: scale(1.3) rotate(5deg) translate(10px, 10px);
+}
+.drink:hover{
+    /* border-radius: 30%; */
+    border-color: red;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    transform: translate(-10px, -15px);
+}
+.animate-btn{
+
+}
+.animate-btn:hover{
+
+}
